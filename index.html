@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <style>
+        .options {
+            font-size: 2rem;
+        }
+
+        select {
+            border-radius: 9999px;
+            font-size: 1.5rem;
+            width: 15%;
+            border: 2px solid teal;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="column is-two-thirds is-offset-2">
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title is-size-3 is-justify-content-center">
+                    Ping Pong ScoreKeeper
+                </p>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    <div id="display">
+                        <h1 class="is-size-1"><span id="playerOne">0</span> - <span id="playerTwo">0</span></h1>
+                        <h1 id="winner" class="is-size-3"></h1>
+                    </div>
+
+                    <div class="options">
+                        <label for="rounds">Number of Rounds</label>
+                        <select name="rounds" id="rounds">
+                            <option value="">Select</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <footer class="card-footer">
+                <button class="btn is-primary button card-footer-item is-large" id="addPlayerOne" disabled>+1
+                    P1</button>
+                <button class="btn is-info button card-footer-item is-large" id="addPlayerTwo" disabled>+1 P2</button>
+                <button id="reset" class="is-danger button card-footer-item is-large" disabled>Reset</button>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
